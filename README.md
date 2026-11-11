@@ -20,7 +20,9 @@
 ## 需要什么
 
 - Android 8.0+（minSdk 26），需要有麦克风的真机或模拟器
-- **MOSS API Key**：实时语音与批量转写必需，在 <https://api.mosi.cn> 对应的控制台申请
+- **MOSS API Key**：实时语音与批量转写必需，在 MOSI Studio 控制台申请：<https://studio.mosi.cn>
+  （注册/登录 → 控制台 → API 密钥 → 创建。注意：产品叫 MOSS，但域名是 `mosi.cn`，
+  API 端点固定为 `https://api.mosi.cn`，不要想当然改成 moss.cn）
 - 可选：任意 OpenAI 兼容的文本模型服务（只用于「整理笔记」这一步）；不配也能用本地规则整理
 
 ## 构建
