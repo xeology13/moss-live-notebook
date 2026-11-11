@@ -1,7 +1,13 @@
+<div align="center">
+
+<img src="app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" width="110" alt="MOSS 笔记图标"/>
+
 # MOSS 笔记（Android）
 
-边聊边记的语音笔记本：接 MOSS 的实时双工语音，聊完把这一通整理成 Markdown 笔记，全部存在手机本地。
+**边聊边记的语音笔记本** —— 接 MOSS 的实时双工语音，聊完把这一通整理成 Markdown 笔记，全部存在手机本地。
 无账号、无云端同步。
+
+</div>
 
 > ⚠️ 本项目是第三方客户端，不是 MOSS 官方项目。实时语音与批量转写调用 MOSS 的 API，
 > 需要自备 MOSS API Key。
