@@ -102,18 +102,6 @@ app/src/main/java/net/mosslive/notebook/
     └── SpeakerSink.kt   48k 播放、chunk ACK、电平、落盘
 ```
 
-## 实现要点（踩过的坑）
-
-- `wss://api.mosi.cn/v1/realtime?model=moss-live-1.0&user=<deviceID>`，key 走 `Authorization: Bearer …` 头（不拼 URL）
-- 挂断必须先发 `playback.completed` 再关连接，否则账号唯一并发槽被占，下次连 429
-- 打断只清本地播放队列；发 `playback.stopped` 会回 `invalid_public_request`
-- **被打断的那轮，服务端不给任何 `output.transcript`**（done/updated 均 0 条）→ 想保住它查到的资料，
-  必须自己录下行音频再批量转写
-- 实时 ASR 质量差（碎片、错字、误判语种），笔记正文一律走 `moss-transcribe-diarize-pro` 批量转写
-- 生成笔记前要等它把当前这句说完（最多 6 秒），否则截到半句
-- 笔记有两个生产者：客户端 `generateNote` 与模型调用的 `save_note` 工具，两者都要打「已存」标记，
-  否则「明明保存了还弹窗」
-
 ## 已知限制
 
 - 只支持 Android
