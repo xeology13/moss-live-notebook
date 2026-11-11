@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.MossNotebook" parent="android:Theme.Material.NoActionBar">
+        <item name="android:windowBackground">#FFF7F7F5</item>
+        <item name="android:statusBarColor">#FFF7F7F5</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+</resources>

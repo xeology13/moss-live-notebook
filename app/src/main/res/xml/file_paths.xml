@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 只暴露笔记目录。之前还有 <files-path path="."/>，等于把整个私有目录
+     （含原始通话录音 uplink/downlink PCM）都纳入可授权范围，已删除。 -->
+<paths>
+    <files-path name="notes" path="notes/" />
+</paths>
